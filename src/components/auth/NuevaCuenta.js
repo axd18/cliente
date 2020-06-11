@@ -18,7 +18,7 @@ const NuevaCuenta = () => {
 
         // Password minimo de 6 caracteres
 
-        // Los 2 passwords pson iguales
+        // Los 2 passwords son iguales
         
         // Pasarlo al action
     }
