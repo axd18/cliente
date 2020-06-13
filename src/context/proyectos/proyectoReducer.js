@@ -1,8 +1,14 @@
-
+import { FORMULARIO_PROYECTO } from '../../types';
 
 export default (state, action) => {
   switch(action.type) {
-      default:
+    case FORMULARIO_PROYECTO:
+      return {
+        ...state,
+        formulario: true
+      }  
+    
+    default:
           return state;
   }  
 }
