@@ -21,7 +21,8 @@ const ListadoTareas = () => {
                     ? (<li className="tarea"><p>No hay tareas</p></li>)
                     :  tareasProyecto.map(tarea => (
                         <Tarea
-                            tarea={tarea}
+                        key={tarea.id}    
+                        tarea={tarea}
                         />
                     )) 
                 }
