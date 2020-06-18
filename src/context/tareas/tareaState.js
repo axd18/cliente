@@ -5,7 +5,6 @@ import TareaReducer from './tareaReducer';
 
 import {
     TAREAS_PROYECTO
-
 } from '../../types/index'
 
 const TareaState = props => {
@@ -22,6 +21,7 @@ const TareaState = props => {
             {nombre: 'Elegir Plataforma de pago', estado: false, proyectoId: 3},
             {nombre: 'Elegir Colores', estado: false, proyectoId: 2},
         ],
+        tareasproyecto: null
     }
 
     // Crear dispatch y state
@@ -42,6 +42,7 @@ const TareaState = props => {
         <TareaContext.Provider
             value={{
                 tareas: state.tareas,
+                tareasproyecto: state.tareasproyecto,
                 obtenerTareas
             }}
         >
