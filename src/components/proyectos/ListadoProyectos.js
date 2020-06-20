@@ -20,7 +20,7 @@ const ListadoProyectos = () => {
         <ul className="listado-proyectos">
             {proyectos.map(proyecto => (
                 <Proyecto
-                    // key={proyecto.id}
+                    key={proyecto.id}
                     proyecto={proyecto} 
                 />
             ))}
