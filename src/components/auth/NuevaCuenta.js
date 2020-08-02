@@ -10,7 +10,7 @@ const NuevaCuenta = (props) => {
     const { alerta, mostrarAlerta } = alertaContext;
 
     const authContext = useContext(AuthContext);
-    const { mensaje, autenticado,  registrarUsuario } = authContext;
+    const { mensaje, autenticado, registrarUsuario } = authContext;
 
     // En caso de que el usuario se haya autenticado o registrado o sea un registro duplicado
     useEffect(() => {
