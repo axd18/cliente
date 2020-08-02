@@ -3,7 +3,7 @@ import AuthContext from './authContext';
 import AuthReducer from './authReducer';
 
 import clienteAxios from '../../config/axios';
-// import tokenAuth from '../../config/token';
+import tokenAuth from '../../config/token';
 
 import { 
     REGISTRO_EXITOSO,
@@ -55,9 +55,9 @@ const AuthState = props => {
     // Retorna el usuario autenticado
     const usuarioAutenticado = async () => {
         const token = localStorage.getItem('token');
-        // if(token) {
-        //     tokenAuth(token);
-        // }
+        if(token) {
+            tokenAuth(token);
+        }
 
         try {
             const respuesta = await clienteAxios.get('/api/auth');
