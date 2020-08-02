@@ -2,7 +2,7 @@ import React, { useReducer } from 'react';
 import alertaReducer from './alertaReducer';
 import alertaContext from './alertaContext';
 
-import { MOSTRAR_ALERTA, OCULTAR_ALERTA} from '../../types';
+import { MOSTRAR_ALERTA, OCULTAR_ALERTA} from '../../types';
 
 const AlertaState = props => {
     const initialState = {
@@ -14,7 +14,7 @@ const AlertaState = props => {
     // Funciones
     const mostrarAlerta = (msg, categoria) => {
         dispatch({
-            type:  MOSTRAR_ALERTA,
+            type:  MOSTRAR_ALERTA,
             payload: {
                 msg, 
                 categoria

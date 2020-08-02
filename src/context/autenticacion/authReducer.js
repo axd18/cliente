@@ -1,4 +1,4 @@
-import { 
+import { 
     REGISTRO_EXITOSO,
     REGISTRO_ERROR,
     OBTENER_USUARIO,
