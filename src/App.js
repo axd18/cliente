@@ -10,7 +10,7 @@ import AlertaState from './context/alertas/alertaState';
 import AuthState from './context/autenticacion/authState';
 import tokenAuth from './config/token';
 
-// REevisar si tenemos un token
+// Revisar si tenemos un token
 const token = localStorage.getItem('token');
 if (token) {
   tokenAuth(token);
